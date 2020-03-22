@@ -87,18 +87,6 @@ F 3 "" H 7450 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SparkFun-Connectors:I2C_STANDARDQWIIC J2
-U 1 1 5D51D6AB
-P 3600 3700
-F 0 "J2" H 3550 4100 45  0000 R CNN
-F 1 "I2C_STANDARDQWIIC" H 3750 3550 45  0000 R CNN
-F 2 "Connectors:1X04_1MM_RA" H 3600 4200 20  0001 C CNN
-F 3 "" H 3600 3700 50  0001 C CNN
-F 4 "CONN-13729" H 3372 3766 60  0001 R CNN "Field4"
-	1    3600 3700
-	1    0    0    -1  
-$EndComp
-$Comp
 L custom:MK32L2B_QFN32 U1
 U 1 1 5E635B04
 P 6100 3700
@@ -277,8 +265,6 @@ F 8 "Single Port 5 Contact Shielded SMT MICRO USB B-Type Receptacle" H 3300 4900
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	3800 3200 3800 3700
-Wire Wire Line
 	3700 4600 4800 4600
 Connection ~ 4800 4600
 Wire Wire Line
@@ -293,28 +279,6 @@ Wire Wire Line
 	4700 4800 4700 4300
 Wire Wire Line
 	4700 4300 4900 4300
-$Comp
-L Connector_Generic:Conn_01x07 J3
-U 1 1 5E6EFD37
-P 3500 1800
-F 0 "J3" H 3500 2200 50  0000 C CNN
-F 1 "Conn_01x07" H 3418 2226 50  0001 C CNN
-F 2 "footprint:PinHeader_1x07_P100mil_Vertical" H 3500 1800 50  0001 C CNN
-F 3 "~" H 3500 1800 50  0001 C CNN
-	1    3500 1800
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x07 J4
-U 1 1 5E6F22EF
-P 9350 4000
-F 0 "J4" H 9350 3600 50  0000 C CNN
-F 1 "Conn_01x07" H 9268 3566 50  0001 C CNN
-F 2 "footprint:PinHeader_1x07_P100mil_Vertical" H 9350 4000 50  0001 C CNN
-F 3 "~" H 9350 4000 50  0001 C CNN
-	1    9350 4000
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	7300 3900 9150 3900
 Wire Wire Line
@@ -335,16 +299,13 @@ Wire Wire Line
 	9000 3700 9000 3350
 Wire Wire Line
 	9000 3250 9400 3250
-Wire Wire Line
-	3700 3700 3800 3700
-Connection ~ 3800 3700
 Connection ~ 3800 2800
 Wire Wire Line
 	3900 1400 3900 2100
 Wire Wire Line
-	3700 2100 3900 2100
+	3400 2100 3900 2100
 Wire Wire Line
-	3700 2000 3800 2000
+	3400 2000 3800 2000
 Wire Wire Line
 	3800 2000 3800 2800
 Wire Wire Line
@@ -354,22 +315,14 @@ Wire Wire Line
 Wire Wire Line
 	4500 2500 4900 2500
 Wire Wire Line
-	4700 1700 3700 1700
+	4700 1700 3400 1700
 Wire Wire Line
 	4800 2600 4800 1600
 Wire Wire Line
-	4800 1600 3700 1600
+	4800 1600 3400 1600
 Connection ~ 4800 2600
 Wire Wire Line
-	3700 1500 3800 1500
-Wire Wire Line
-	3800 1300 9700 1300
-Wire Wire Line
-	9700 1300 9700 5400
-Wire Wire Line
-	3800 1300 3800 1500
-Wire Wire Line
-	7300 5400 9700 5400
+	7300 5400 8500 5400
 Wire Wire Line
 	7300 2400 7650 2400
 Wire Wire Line
@@ -545,20 +498,9 @@ F 3 "~" H 4200 2600 50  0001 C CNN
 	1    4200 2600
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3800 3700 3800 4300
-Wire Wire Line
-	3700 3400 4400 3400
-Wire Wire Line
-	4900 3500 4500 3500
-Wire Wire Line
-	3700 3600 3900 3600
 Connection ~ 3900 2100
 Wire Wire Line
-	3900 3600 3900 3700
-Wire Wire Line
 	3900 3700 4000 3700
-Connection ~ 3900 3600
 Wire Wire Line
 	3900 3700 3900 3900
 Wire Wire Line
@@ -567,17 +509,7 @@ Connection ~ 3900 3700
 Wire Wire Line
 	4300 3700 4400 3700
 Wire Wire Line
-	4400 3700 4400 3400
-Connection ~ 4400 3400
-Wire Wire Line
-	4400 3400 4900 3400
-Wire Wire Line
 	4300 3900 4500 3900
-Wire Wire Line
-	4500 3900 4500 3500
-Connection ~ 4500 3500
-Wire Wire Line
-	4500 3500 3700 3500
 Wire Wire Line
 	3900 2100 3900 2600
 Wire Wire Line
@@ -610,8 +542,6 @@ Wire Wire Line
 	4050 3000 3900 3000
 Connection ~ 3900 3000
 Wire Wire Line
-	3900 3000 3900 3600
-Wire Wire Line
 	4350 3000 4500 3000
 Wire Wire Line
 	4400 2800 4500 2800
@@ -635,10 +565,6 @@ Text Label 4000 1900 0    50   ~ 0
 SWD
 Text Label 4000 1800 0    50   ~ 0
 SWC
-Text Label 4000 3400 0    50   ~ 0
-SCL
-Text Label 4000 3500 0    50   ~ 0
-SDA
 Text Label 8000 2100 0    50   ~ 0
 R
 Text Label 8000 2300 0    50   ~ 0
@@ -670,11 +596,11 @@ D-
 Text Label 3900 4800 0    50   ~ 0
 D+
 Wire Wire Line
-	4600 1800 3700 1800
+	4600 1800 3400 1800
 Wire Wire Line
 	4600 1800 4600 2200
 Wire Wire Line
-	3700 1900 4500 1900
+	3400 1900 4500 1900
 Wire Wire Line
 	8800 3250 9000 3250
 Connection ~ 9000 3250
@@ -683,4 +609,88 @@ Wire Wire Line
 Connection ~ 9000 3350
 Wire Wire Line
 	9000 3350 9000 3250
+$Comp
+L Connector_Generic:Conn_01x08 J4
+U 1 1 5E82E45B
+P 9350 4100
+F 0 "J4" H 9268 3475 50  0000 C CNN
+F 1 "Conn_01x08" H 9268 3566 50  0000 C CNN
+F 2 "footprint:PinHeader_1x08_P100mil_Vertical" H 9350 4100 50  0001 C CNN
+F 3 "~" H 9350 4100 50  0001 C CNN
+	1    9350 4100
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J3
+U 1 1 5E835A4D
+P 3200 1900
+F 0 "J3" H 3118 2417 50  0000 C CNN
+F 1 "Conn_01x08" H 3118 2326 50  0000 C CNN
+F 2 "footprint:PinHeader_1x08_P100mil_Vertical" H 3200 1900 50  0001 C CNN
+F 3 "~" H 3200 1900 50  0001 C CNN
+	1    3200 1900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 5400 8500 4400
+Wire Wire Line
+	8500 4400 9150 4400
+Wire Wire Line
+	3400 3600 3900 3600
+Wire Wire Line
+	4400 3700 4400 3400
+Connection ~ 3900 3600
+$Comp
+L SparkFun-Connectors:I2C_STANDARDQWIIC J2
+U 1 1 5D51D6AB
+P 3300 3700
+F 0 "J2" H 3250 4100 45  0000 R CNN
+F 1 "I2C_STANDARDQWIIC" H 3450 3550 45  0000 R CNN
+F 2 "Connectors:1X04_1MM_RA" H 3300 4200 20  0001 C CNN
+F 3 "" H 3300 3700 50  0001 C CNN
+F 4 "CONN-13729" H 3072 3766 60  0001 R CNN "Field4"
+	1    3300 3700
+	1    0    0    -1  
+$EndComp
+Connection ~ 3800 3700
+Text Label 4000 3400 0    50   ~ 0
+SCL
+Text Label 4000 3500 0    50   ~ 0
+SDA
+Connection ~ 4400 3400
+Wire Wire Line
+	4400 3400 4900 3400
+Wire Wire Line
+	3400 3700 3800 3700
+Wire Wire Line
+	3800 3700 3800 4300
+Wire Wire Line
+	3800 3200 3800 3700
+Connection ~ 4500 3500
+Wire Wire Line
+	3900 3000 3900 3600
+Wire Wire Line
+	3900 3600 3900 3700
+Wire Wire Line
+	4500 3900 4500 3500
+Wire Wire Line
+	4900 3500 4500 3500
+Wire Wire Line
+	3400 2200 3600 2200
+Wire Wire Line
+	3400 2300 3500 2300
+Wire Wire Line
+	3400 3500 3500 3500
+Wire Wire Line
+	3400 3400 3600 3400
+Wire Wire Line
+	3500 2300 3500 3500
+Connection ~ 3500 3500
+Wire Wire Line
+	3500 3500 4500 3500
+Wire Wire Line
+	3600 2200 3600 3400
+Connection ~ 3600 3400
+Wire Wire Line
+	3600 3400 4400 3400
 $EndSCHEMATC
