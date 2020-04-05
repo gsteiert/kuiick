@@ -1,0 +1,14 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"J2";"JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal";1;"I2C_STANDARDQWIIC";;;
+2;"J4,J3";"PinHeader_1x08_P100mil_Vertical";2;"Conn_01x08";;;
+3;"SW2,SW1";"SW_SPST_B3U-1000P_tight";2;"SW_SPST";;;
+4;"R7,R6,R5,R4";"C0402";4;"10K";;;
+5;"U2";"SOIC-8_5.23x5.23mm_P1.27mm";1;"W25Q32JVSS";;;
+6;"C1,C8";"C0603";2;"2.2UF";;;
+7;"J1";"FCI_10118193-0001LF";1;"10118193-0001LF";;;
+8;"C13,C12,C11";"C0402";3;"0.1UF";;;
+9;"C9";"C0603";1;"10UF";;;
+10;"R1";"C0402";1;"2K";;;
+11;"R3,R2";"C0402";2;"1K";;;
+12;"D1";"LED_RGB_1x1mm_CW";1;"LED_ARBG";;;
+13;"U1";"QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm";1;"MK32L2B_QFN32";;;

@@ -1,28 +1,28 @@
-## Footprint report - date Mon 16 Mar 2020 03:10:59 AM UTC
+## Footprint report - date Tue 24 Mar 2020 03:09:33 AM UTC
 ## Created by Pcbnew version 5.99.0-unknown-c3175b4~86~ubuntu16.04.1
 ## Unit = mm, Angle = deg.
 
 $BeginDESCRIPTION
 
 $BOARD
-upper_left_corner 139.027381 89.292500
-lower_right_corner 165.353087 112.754970
+upper_left_corner 141.824999 84.992500
+lower_right_corner 166.158335 112.072500
 $EndBOARD
 
 $MODULE "C1"
 footprint "footprint:C0603"
 attribut smd
-position 149.600000 105.900000  orientation -90.00
+position 149.800000 105.100000  orientation 0.00
 layer back
 $PAD "1"
 Shape Roundrect Layer back
-position -0.700000  0.000000  size  0.700000  0.800000  orientation 360.00
+position -0.700000  0.000000  size  0.700000  0.800000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Roundrect Layer back
-position  0.700000  0.000000  size  0.700000  0.800000  orientation 360.00
+position  0.700000  0.000000  size  0.700000  0.800000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -31,7 +31,7 @@ $EndMODULE  C1
 $MODULE "C8"
 footprint "footprint:C0603"
 attribut smd
-position 154.000000 94.300000  orientation -90.00
+position 154.100000 93.600000  orientation -90.00
 layer front
 $PAD "1"
 Shape Roundrect Layer front
@@ -157,7 +157,7 @@ $EndMODULE  D1
 $MODULE "J1"
 footprint "footprint:FCI_10118193-0001LF"
 attribut none
-position 150.000000 108.100000  orientation 0.00
+position 150.000000 108.600000  orientation 0.00
 layer front
 $PAD "1"
 Shape Rect Layer front
@@ -240,52 +240,52 @@ $EndPAD
 $EndMODULE  J1
 
 $MODULE "J2"
-footprint "Connectors:1X04_1MM_RA"
+footprint "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal"
 attribut smd
-position 150.000000 95.200000  orientation 180.00
+position 150.000000 92.800000  orientation 180.00
 layer front
 $PAD "1"
-Shape Rect Layer front
-position -1.498600  0.000000  size  0.599440  1.348740  orientation 0.00
+Shape Roundrect Layer front
+position -1.500000 -2.000000  size  0.600000  1.550000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
-Shape Rect Layer front
-position -0.497840  0.000000  size  0.599440  1.348740  orientation 0.00
+Shape Roundrect Layer front
+position -0.500000 -2.000000  size  0.600000  1.550000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "3"
-Shape Rect Layer front
-position  0.497840  0.000000  size  0.599440  1.348740  orientation 0.00
+Shape Roundrect Layer front
+position  0.500000 -2.000000  size  0.600000  1.550000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "4"
-Shape Rect Layer front
-position  1.498600  0.000000  size  0.599440  1.348740  orientation 0.00
+Shape Roundrect Layer front
+position  1.500000 -2.000000  size  0.600000  1.550000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
-$PAD "NC1"
-Shape Rect Layer front
-position  2.799080  3.672840  size  1.198880  1.998980  orientation 0.00
+$PAD "MP"
+Shape Roundrect Layer front
+position  2.800000  1.875000  size  1.200000  1.800000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
-$PAD "NC2"
-Shape Rect Layer front
-position -2.799080  3.672840  size  1.198880  1.998980  orientation 0.00
+$PAD "MP"
+Shape Roundrect Layer front
+position -2.800000  1.875000  size  1.200000  1.800000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
 $EndMODULE  J2
 
 $MODULE "J3"
-footprint "footprint:PinHeader_1x07_P100mil_Vertical"
+footprint "footprint:PinHeader_1x08_P100mil_Vertical"
 attribut none
-position 143.650000 107.620000  orientation 180.00
+position 143.650000 108.890000  orientation 180.00
 layer front
 $PAD "1"
 Shape Circle Layer both
@@ -326,15 +326,21 @@ $EndPAD
 $PAD "7"
 Shape Oval Layer both
 position  0.000000 15.240000  size  1.700000  1.700000  orientation 0.00
+drill  1.000000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "8"
+Shape Oval Layer both
+position  0.000000 17.780000  size  1.700000  1.700000  orientation 0.00
 drill  1.000000
 shape_offset  0.000000  0.000000
 $EndPAD
 $EndMODULE  J3
 
 $MODULE "J4"
-footprint "footprint:PinHeader_1x07_P100mil_Vertical"
+footprint "footprint:PinHeader_1x08_P100mil_Vertical"
 attribut none
-position 156.350000 107.620000  orientation 180.00
+position 156.350000 108.890000  orientation 180.00
 layer front
 $PAD "1"
 Shape Circle Layer both
@@ -375,6 +381,12 @@ $EndPAD
 $PAD "7"
 Shape Oval Layer both
 position  0.000000 15.240000  size  1.700000  1.700000  orientation 0.00
+drill  1.000000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "8"
+Shape Oval Layer both
+position  0.000000 17.780000  size  1.700000  1.700000  orientation 0.00
 drill  1.000000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -440,17 +452,17 @@ $EndMODULE  R3
 $MODULE "R4"
 footprint "footprint:C0402"
 attribut smd
-position 146.000000 95.000000  orientation 180.00
+position 145.700000 95.000000  orientation -90.00
 layer front
 $PAD "1"
 Shape Roundrect Layer front
-position -0.400000  0.000000  size  0.400000  0.500000  orientation 0.00
+position -0.400000  0.000000  size  0.400000  0.500000  orientation 360.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Roundrect Layer front
-position  0.400000  0.000000  size  0.400000  0.500000  orientation 0.00
+position  0.400000  0.000000  size  0.400000  0.500000  orientation 360.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -459,7 +471,7 @@ $EndMODULE  R4
 $MODULE "R5"
 footprint "footprint:C0402"
 attribut smd
-position 146.000000 94.000000  orientation 180.00
+position 145.700000 93.000000  orientation 90.00
 layer front
 $PAD "1"
 Shape Roundrect Layer front
@@ -497,7 +509,7 @@ $EndMODULE  R6
 $MODULE "R7"
 footprint "footprint:C0402"
 attribut smd
-position 146.000000 96.000000  orientation 180.00
+position 146.000000 97.800000  orientation 180.00
 layer front
 $PAD "1"
 Shape Roundrect Layer front
@@ -813,7 +825,7 @@ $EndMODULE  U1
 $MODULE "U2"
 footprint "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm"
 attribut smd
-position 150.000000 93.400000  orientation 180.00
+position 150.000000 93.000000  orientation 180.00
 layer back
 $PAD "1"
 Shape Roundrect Layer back
